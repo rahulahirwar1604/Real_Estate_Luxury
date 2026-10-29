@@ -1,0 +1,1021 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#fff8f1","secondary-fixed-dim":"#ffb596","on-secondary":"#ffffff","on-tertiary-container":"#4e3d00","on-surface":"#211b0d","outline-variant":"#dbc1b7","tertiary-fixed":"#ffe08a","on-primary-fixed":"#360f00","on-error":"#ffffff","on-secondary-container":"#783c20","tertiary":"#735c0d","primary-fixed-dim":"#ffb595","secondary-container":"#feaa85","inverse-primary":"#ffb595","error":"#ba1a1a","primary-fixed":"#ffdbcd","on-error-container":"#93000a","on-secondary-fixed-variant":"#71361a","inverse-surface":"#363020","tertiary-container":"#c5a855","on-surface-variant":"#55433b","surface-container-low":"#fff2db","surface":"#fff8f1","surface-container-high":"#f3e7d0","primary-container":"#b55c30","surface-dim":"#e5d9c2","on-primary":"#ffffff","on-tertiary-fixed":"#241a00","surface-tint":"#99461c","primary":"#96441a","background":"#fff8f1","secondary-fixed":"#ffdbcd","surface-container-lowest":"#ffffff","on-background":"#211b0d","on-secondary-fixed":"#360f00","surface-container-highest":"#ede1ca","on-primary-container":"#fffbff","outline":"#88726a","error-container":"#ffdad6","on-tertiary":"#ffffff","inverse-on-surface":"#fcefd8","secondary":"#8e4d2f","on-tertiary-fixed-variant":"#574400","surface-container":"#f9edd5","tertiary-fixed-dim":"#e2c46d","on-primary-fixed-variant":"#7a3005","surface-variant":"#ede1ca"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1.25rem","space-lg":"2rem","space-2xl":"6rem","space-xs":"0.375rem","margin-tablet":"2rem","space-sm":"0.75rem","margin":"4rem","gutter":"2rem","space-xl":"3.5rem","margin-mobile":"1.25rem","gutter-mobile":"1rem"},fontFamily:{"label-md":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"title-editorial":["Playfair Display"],"label-caps":["Plus Jakarta Sans"],"numeral-lg":["Playfair Display"],"display-hero-mobile":["Playfair Display"],"display-hero":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"headline-sm":["Playfair Display"]},fontSize:{"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.02em",fontWeight:"500"}],"headline-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.01em",fontWeight:"400"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"title-editorial":["20px",{lineHeight:"28px",fontWeight:"600"}],"label-caps":["11px",{lineHeight:"16px",letterSpacing:"0.15em",fontWeight:"600"}],"numeral-lg":["36px",{lineHeight:"44px",fontWeight:"400"}],"display-hero-mobile":["40px",{lineHeight:"48px",letterSpacing:"-0.01em",fontWeight:"400"}],"display-hero":["72px",{lineHeight:"80px",letterSpacing:"-0.02em",fontWeight:"400"}],"headline-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"0em",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"300"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"headline-md":["32px",{lineHeight:"40px",fontWeight:"500"}],"headline-sm":["24px",{lineHeight:"32px",fontWeight:"500"}]}}}};</script>
+<style>
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  @keyframes bounceX {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(4px); }
+  }
+  .animate-bounce-x {
+    display: inline-block;
+    animation: bounceX 1s infinite;
+  }
+</style>
+
+</head><body class="bg-background font-body-md text-on-surface antialiased"><header class="sticky top-0 z-50 bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#EADFCF]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center space-x-3 sm:space-x-4">
+      <div class="w-9 h-9 bg-inverse-surface text-primary-fixed flex items-center justify-center font-title-editorial text-lg font-bold border border-tertiary-container shadow-sm rounded-sm">W</div>
+      <div class="flex items-center space-x-2 sm:space-x-3">
+        <span class="font-title-editorial tracking-[0.2em] sm:tracking-[0.25em] text-xs sm:text-sm uppercase font-semibold text-on-surface">Webravex Real Estate</span>
+        <span class="h-3.5 w-[1px] bg-outline-variant hidden sm:inline-block"></span>
+        <span class="text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.25em] uppercase text-tertiary font-medium hidden sm:inline-block">Private Office</span>
+      </div>
+    </a>
+    
+    <nav class="hidden md:flex items-center gap-8 lg:gap-12 ml-auto mr-6 lg:mr-8 text-xs uppercase tracking-widest font-medium text-on-surface" data-active-classes="text-primary font-semibold border-b-2 border-primary pb-0.5">
+      <a class="hover:text-primary transition-colors pb-0.5" data-path="services" href="services.html">Services</a>
+      <a class="text-primary font-semibold border-b-2 border-primary pb-0.5" data-path="properties" href="properties.html">Properties</a>
+      <a class="hover:text-primary transition-colors pb-0.5" data-path="why-us" href="index.html#promise">Why Us</a>
+      <a class="hover:text-primary transition-colors pb-0.5" data-path="reviews" href="index.html#reviews">Reviews</a>
+      <a class="hover:text-primary transition-colors pb-0.5" data-path="contact" href="contact.html">Contact</a>
+    </nav>
+    
+    <div class="flex items-center space-x-3 sm:space-x-5">
+      <a aria-label="Connect on WhatsApp" class="relative group flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-surface-container hover:bg-surface-container-high border border-outline-variant text-on-surface transition-all shadow-sm hover:border-primary" href="https://wa.me/912269885000" target="_blank">
+        <span class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-white animate-pulse"></span>
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-on-surface group-hover:text-primary transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"></path></svg>
+      </a>
+      <!-- Mobile / Tablet Hamburger Toggle Button -->
+      <button type="button" onclick="document.getElementById('stitchMobileNavDrawer').classList.toggle('hidden')" aria-label="Toggle Navigation Menu" class="md:hidden flex items-center justify-center w-9 h-9 rounded-sm bg-surface-container border border-outline-variant text-on-surface focus:outline-none cursor-pointer">
+        <svg class="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile / Tablet Navigation Drawer -->
+  <div id="stitchMobileNavDrawer" class="hidden md:hidden px-6 pt-3 pb-6 bg-[#FAF7F2]/98 backdrop-blur-xl border-t border-[#EADFCF] flex flex-col space-y-4 text-xs uppercase tracking-widest font-medium text-on-surface">
+    <a href="index.html" class="hover:text-primary transition-colors py-1">Home</a>
+    <a href="services.html" class="hover:text-primary transition-colors py-1">Services</a>
+    <a href="properties.html" class="text-primary font-semibold transition-colors py-1">Properties</a>
+    <a href="index.html#promise" class="hover:text-primary transition-colors py-1">Why Us</a>
+    <a href="index.html#reviews" class="hover:text-primary transition-colors py-1">Reviews</a>
+    <a href="contact.html" class="hover:text-primary transition-colors py-1">Contact</a>
+  </div>
+</header><main class="w-full bg-background"><div class="flex flex-col w-full">
+<!-- Interactive Architectural Drawer Overlay for Granular Parameters -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out" id="filter-drawer-overlay">
+<div class="absolute top-0 right-0 h-full w-full max-w-xl bg-surface-bright shadow-2xl p-6 sm:p-10 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto" id="filter-drawer">
+<div>
+<div class="flex items-center justify-between pb-6 border-b border-outline-variant/30">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold">Institutional Due Diligence</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Refine Catalog Matrix</h3>
+</div>
+<button aria-label="Close Filter Drawer" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" id="close-drawer">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<div class="py-8 space-y-8">
+<!-- Possession Timeline -->
+<div>
+<label class="block font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-3">Possession Timeline &amp; Stage</label>
+<div class="grid grid-cols-2 gap-2.5">
+<label class="relative flex items-center p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors border border-outline-variant/30">
+<input checked="" class="accent-primary w-4 h-4 mr-3" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Ready to Move-In</span>
+</label>
+<label class="relative flex items-center p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors border border-outline-variant/30">
+<input class="accent-primary w-4 h-4 mr-3" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Possession 2025</span>
+</label>
+<label class="relative flex items-center p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors border border-outline-variant/30">
+<input class="accent-primary w-4 h-4 mr-3" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">BIM Monitored Const.</span>
+</label>
+<label class="relative flex items-center p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors border border-outline-variant/30">
+<input class="accent-primary w-4 h-4 mr-3" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Pre-Launch Allocation</span>
+</label>
+</div>
+</div>
+<!-- Configuration Matrix -->
+<div>
+<label class="block font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-3">Configuration &amp; Space Type</label>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-colors" type="button">3 BHK Master Suites</button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary" type="button">4 &amp; 5 BHK Ultra-Floor</button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-colors" type="button">6+ BHK Sky Villa</button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-colors" type="button">Duplex &amp; Triplex Penthouses</button>
+</div>
+</div>
+<!-- Curated Amenities & Specs -->
+<div>
+<label class="block font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-3">Bespoke Specifications</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<label class="flex items-center space-x-2.5">
+<input checked="" class="accent-primary w-4 h-4" type="checkbox">
+<span class="">Private Heated Plunge Pool</span>
+</label>
+<label class="flex items-center space-x-2.5">
+<input checked="" class="accent-primary w-4 h-4" type="checkbox">
+<span class="">4+ Stilt Reserved Bays</span>
+</label>
+<label class="flex items-center space-x-2.5">
+<input checked="" class="accent-primary w-4 h-4" type="checkbox">
+<span class="">Private Biometric Elevator</span>
+</label>
+<label class="flex items-center space-x-2.5">
+<input class="accent-primary w-4 h-4" type="checkbox">
+<span class="">Helipad Access License</span>
+</label>
+<label class="flex items-center space-x-2.5">
+<input class="accent-primary w-4 h-4" type="checkbox">
+<span class="">Italian Botticino Marble</span>
+</label>
+<label class="flex items-center space-x-2.5">
+<input checked="" class="accent-primary w-4 h-4" type="checkbox">
+<span class="">Dual Staff &amp; Chauffeur Qtrs</span>
+</label>
+</div>
+</div>
+<!-- Legal & Verification Guarantee -->
+<div class="p-4 rounded-lg bg-surface-container-high/60 space-y-2 border border-outline-variant/30">
+<span class="font-label-caps text-label-caps text-tertiary flex items-center gap-1.5 uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm text-tertiary">verified_user</span> RERA &amp; Title Verification Guarantee
+            </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All portfolios feature 100% Freehold Conveyance Deeds, vetted title search reports by top-tier Indian law firms, and approved structural audits.</p>
+</div>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex items-center justify-between gap-4">
+<button class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors underline" id="reset-filters" type="button">Reset All</button>
+<button class="flex-1 py-3 px-6 rounded bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-widest transition-all text-center shadow-md" id="apply-filters" type="button">
+          Apply Filters (28 Assets)
+        </button>
+</div>
+</div>
+</div>
+<!-- Hero Editorial Showcase & Search Matrix -->
+<section class="relative pt-14 pb-16 px-4 sm:px-6 lg:px-8 border-b border-outline-variant/30 overflow-hidden"><div class="absolute inset-0 overflow-hidden pointer-events-none"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh_gdNR2cvh1jMxbEmTN8lq-8Ey6jWw2q9v7N-hhjze6j0G4JDTmCdIbIShYvPXQa4_ehR_vhilMJjzbTJHVErkqUafwLw4N6CinJSPHSoe5rWicBEsQ56iSXaMu3JzFG3hGFSvjPqFxtPK_n0nKU-jlf0pAC98NKbI5El6xfdxW70IAM0LYw43z8Guo7QafrITfMPhnJFoKjbQ3T6OVHGHenmcUL8-MsrazXYTCb6b_93-PsfR7NaDV2NBhayYxjW6w" alt="Penthouse rooftop architectural backdrop" class="w-full h-full object-cover transform scale-105 blur-sm opacity-70" style="filter: saturate(1.15) brightness(0.95);"><div class="absolute inset-0 bg-[#FAF7F2]/40 backdrop-blur-sm"></div></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<!-- Certification Header Badge -->
+
+<!-- Main Headline Block -->
+<div class="mb-8">
+  <div class="flex items-center space-x-2 text-[10px] sm:text-[11px] uppercase tracking-[0.25em] font-bold text-primary mb-2">
+    <span>•</span>
+    <span>Verified Sovereign Portfolios</span>
+    <span>•</span>
+    <span>Q4 2025 Handover</span>
+  </div>
+  <h1 class="text-2xl sm:text-4xl lg:text-5xl font-headline-lg font-title-editorial text-on-surface leading-[1.15]">
+    Sovereign Residential Assets
+  </h1>
+  <p class="text-xs sm:text-sm text-on-surface-variant mt-2 max-w-2xl font-light leading-relaxed">
+    Curated ultra-luxury freehold villas, imperial heritage manors, high-rise towers, and panoramic sky penthouses across India's leading economic epicenters.
+  </p>
+</div>
+<!-- Omnisearch Command Module -->
+<div class="bg-surface-bright rounded-xl shadow-xl p-3 sm:p-6 border border-outline-variant/40 overflow-hidden">
+  <form id="propertiesSearchForm" class="flex flex-col gap-2.5 sm:gap-3 w-full" onsubmit="event.preventDefault();">
+    <!-- Top Search Input with Embedded Clear Button -->
+    <div class="w-full relative min-w-0">
+      <span class="material-symbols-outlined absolute left-3 sm:left-3.5 top-1/2 -translate-y-1/2 text-outline text-base sm:text-lg pointer-events-none">search</span>
+      <input id="propertiesSearchInput" class="w-full pl-9 sm:pl-10 pr-9 sm:pr-10 py-2.5 sm:py-3 bg-surface-container-low rounded-lg font-body-sm text-xs sm:text-body-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-1 focus:ring-primary border border-transparent transition-all shadow-inner" placeholder="Search locality, landmark, estate name, or specs (Worli, Jubilee Hills, Penthouse, Pool)..." type="text" autocomplete="off">
+      <button id="clearSearchInputBtn" type="button" aria-label="Clear search" class="hidden absolute right-2.5 sm:right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all text-xs cursor-pointer">
+        <span class="material-symbols-outlined text-sm">close</span>
+      </button>
+    </div>
+
+    <!-- Filter Controls Row (Responsive Grid) -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-2.5 w-full">
+      <!-- City Select -->
+      <div class="relative w-full">
+        <select id="propertiesCitySelect" class="w-full px-2.5 sm:px-3 py-2 sm:py-2.5 md:py-3 bg-surface-container-low rounded-lg font-body-sm text-[11.5px] sm:text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary border border-outline-variant/30 appearance-none cursor-pointer truncate">
+          <option value="all">All Metro Cities</option>
+          <option value="mumbai">Mumbai MMR</option>
+          <option value="delhi">Delhi NCR</option>
+          <option value="bengaluru">Bengaluru Prime</option>
+          <option value="hyderabad">Hyderabad</option>
+        </select>
+        <span class="material-symbols-outlined absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 text-outline text-sm pointer-events-none">expand_more</span>
+      </div>
+
+      <!-- Price Select -->
+      <div class="relative w-full">
+        <select id="propertiesPriceSelect" class="w-full px-2.5 sm:px-3 py-2 sm:py-2.5 md:py-3 bg-surface-container-low rounded-lg font-body-sm text-[11.5px] sm:text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary border border-outline-variant/30 appearance-none cursor-pointer truncate">
+          <option value="all">All Price Ranges</option>
+          <option value="10-25">₹10 Cr – ₹25 Cr</option>
+          <option value="25-50">₹25 Cr – ₹50 Cr</option>
+          <option value="50-100">₹50 Cr – ₹100 Cr</option>
+          <option value="100+">₹100+ Cr Ultra-Trophy</option>
+        </select>
+        <span class="material-symbols-outlined absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 text-outline text-sm pointer-events-none">expand_more</span>
+      </div>
+
+      <!-- Typology Select: Hidden on mobile (< md), visible on desktop -->
+      <div class="hidden md:block relative w-full">
+        <select id="propertiesTypologySelect" class="w-full px-3 py-2.5 sm:py-3 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary border border-outline-variant/30 appearance-none cursor-pointer">
+          <option value="all">All Typologies</option>
+          <option value="villas">Independent Villas</option>
+          <option value="mansions">Imperial Mansions</option>
+          <option value="highrise">High-Rise Towers</option>
+          <option value="penthouses">Sky Penthouses</option>
+        </select>
+        <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-sm pointer-events-none">expand_more</span>
+      </div>
+
+      <!-- Action Buttons Row -->
+      <div class="grid grid-cols-2 gap-1.5 sm:gap-2 w-full col-span-2 md:col-span-3 lg:col-span-1">
+        <button aria-label="Open granular parameters" class="py-2 sm:py-2.5 lg:py-3 px-2 sm:px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center gap-1 transition-all text-[11px] sm:text-xs uppercase tracking-wider font-semibold border border-outline-variant/40 whitespace-nowrap cursor-pointer" id="open-filters-btn" type="button">
+          <span class="material-symbols-outlined text-sm sm:text-base text-primary">tune</span>
+          <span>Filters</span>
+          <span id="activeFilterBadge" class="hidden ml-0.5 sm:ml-1 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-primary text-on-primary text-[9px] sm:text-[10px] flex items-center justify-center font-bold">0</span>
+        </button>
+        <button id="searchPropertiesBtn" class="py-2 sm:py-2.5 lg:py-3 px-3 sm:px-4 rounded-lg bg-primary hover:bg-primary-container text-on-primary flex items-center justify-center gap-1 text-[11px] sm:text-xs uppercase tracking-wider font-semibold transition-all shadow-md whitespace-nowrap cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-sm sm:text-base">search</span>
+          <span>Search</span>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Portfolio Categories Pill Navigation: Hidden on mobile (< md), visible on desktop -->
+<div class="hidden md:block mt-6 sm:mt-8">
+  <div class="flex items-center justify-between text-[11px] text-[#9E8363] font-medium tracking-wider uppercase mb-2">
+    <span class="flex items-center gap-1.5 font-semibold">
+      <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+      Portfolio Categories
+    </span>
+  </div>
+  
+  <div id="categoryPillStrip" class="flex items-center gap-2 sm:gap-2.5 overflow-x-auto pb-2 scroll-smooth hide-scrollbar snap-x" style="-webkit-overflow-scrolling: touch;">
+    <!-- All Collections -->
+    <button type="button" data-category="all" class="category-pill active flex-shrink-0 snap-start px-4 py-2 sm:px-5 sm:py-2.5 rounded-full font-label-md text-xs sm:text-sm bg-primary text-on-primary font-semibold whitespace-nowrap shadow-md shadow-primary/20 ring-2 ring-primary/20 transition-all flex items-center gap-2 cursor-pointer">
+      <span class="material-symbols-outlined text-sm">dashboard</span>
+      <span>All Portfolios</span>
+      <span class="category-badge px-1.5 py-0.5 rounded-full text-[10px] font-bold bg-white/20 text-white">6</span>
+    </button>
+
+    <!-- Luxury Villas -->
+    <button type="button" data-category="villas" class="category-pill flex-shrink-0 snap-start px-4 py-2 sm:px-5 sm:py-2.5 rounded-full font-label-md text-xs sm:text-sm bg-surface-bright/90 hover:bg-surface-container text-on-surface whitespace-nowrap transition-all border border-outline-variant/40 flex items-center gap-2 cursor-pointer">
+      <span class="material-symbols-outlined text-sm text-primary">villa</span>
+      <span>Luxury Villas</span>
+      <span class="category-badge px-1.5 py-0.5 rounded-full text-[10px] font-medium bg-surface-container text-on-surface-variant border border-outline-variant/30">2</span>
+    </button>
+
+    <!-- Imperial Mansions -->
+    <button type="button" data-category="mansions" class="category-pill flex-shrink-0 snap-start px-4 py-2 sm:px-5 sm:py-2.5 rounded-full font-label-md text-xs sm:text-sm bg-surface-bright/90 hover:bg-surface-container text-on-surface whitespace-nowrap transition-all border border-outline-variant/40 flex items-center gap-2 cursor-pointer">
+      <span class="material-symbols-outlined text-sm text-primary">castle</span>
+      <span>Imperial Mansions</span>
+      <span class="category-badge px-1.5 py-0.5 rounded-full text-[10px] font-medium bg-surface-container text-on-surface-variant border border-outline-variant/30">1</span>
+    </button>
+
+    <!-- High-Rise Towers -->
+    <button type="button" data-category="highrise" class="category-pill flex-shrink-0 snap-start px-4 py-2 sm:px-5 sm:py-2.5 rounded-full font-label-md text-xs sm:text-sm bg-surface-bright/90 hover:bg-surface-container text-on-surface whitespace-nowrap transition-all border border-outline-variant/40 flex items-center gap-2 cursor-pointer">
+      <span class="material-symbols-outlined text-sm text-primary">apartment</span>
+      <span>High-Rise Towers</span>
+      <span class="category-badge px-1.5 py-0.5 rounded-full text-[10px] font-medium bg-surface-container text-on-surface-variant border border-outline-variant/30">2</span>
+    </button>
+
+    <!-- Sky Penthouses -->
+    <button type="button" data-category="penthouses" class="category-pill flex-shrink-0 snap-start px-4 py-2 sm:px-5 sm:py-2.5 rounded-full font-label-md text-xs sm:text-sm bg-surface-bright/90 hover:bg-surface-container text-on-surface whitespace-nowrap transition-all border border-outline-variant/40 flex items-center gap-2 cursor-pointer">
+      <span class="material-symbols-outlined text-sm text-primary">roofing</span>
+      <span>Sky Penthouses</span>
+      <span class="category-badge px-1.5 py-0.5 rounded-full text-[10px] font-medium bg-surface-container text-on-surface-variant border border-outline-variant/30">1</span>
+    </button>
+  </div>
+</div>
+
+<!-- Active Search & Filters Status Bar -->
+<div id="activeFilterStatus" class="mt-3 sm:mt-4 flex flex-wrap items-center justify-between gap-2 sm:gap-3 p-2.5 sm:p-3 bg-surface-container-low/70 rounded-lg sm:rounded-xl border border-outline-variant/30 transition-all">
+  <div class="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs text-on-surface">
+    <span class="material-symbols-outlined text-primary text-sm sm:text-base">auto_awesome</span>
+    <span id="resultsCountText" class="font-medium">Showing all 6 verified luxury estates</span>
+  </div>
+  <div id="activeFilterChips" class="flex flex-wrap items-center gap-1.5 text-xs">
+    <!-- Active filter chips dynamically injected here -->
+  </div>
+</div>
+</div>
+</section>
+<!-- Curated Catalog Showcase Body -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 lg:py-16 space-y-4 sm:space-y-12 lg:space-y-24">
+<!-- Empty State if 0 properties match search/filter -->
+<div id="noPropertiesFound" class="hidden py-10 sm:py-16 px-4 text-center max-w-lg mx-auto">
+  <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-surface-container flex items-center justify-center mx-auto mb-3 sm:mb-4 border border-outline-variant/40 text-primary">
+    <span class="material-symbols-outlined text-2xl sm:text-3xl">travel_explore</span>
+  </div>
+  <h3 class="text-lg sm:text-xl font-serif font-bold text-on-surface mb-1.5 sm:mb-2">No Matching Estates Found</h3>
+  <p class="text-xs sm:text-sm text-on-surface-variant font-light mb-4 sm:mb-6">
+    We couldn't find any architectural assets matching your search criteria. Try modifying your search keywords or clearing active filters.
+  </p>
+  <button id="emptyStateResetBtn" type="button" class="px-4 py-2 sm:px-5 sm:py-2.5 bg-primary hover:bg-primary-container text-on-primary rounded-lg text-xs font-semibold uppercase tracking-wider transition-all shadow-md cursor-pointer">
+    Reset All Filters &amp; Search
+  </button>
+</div>
+<!-- Section 1: Luxury Independent Villas -->
+<section class="space-y-3 sm:space-y-6 lg:space-y-8 transition-all duration-300" id="villas" data-category-section="villas">
+<div class="hidden md:flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-outline-variant/30">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-tertiary font-bold">Category 01</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">Independent Villas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">Freehold plotted footprints, diplomatic zone setbacks, private courtyards, and classical colonnades.</p>
+</div>
+<div class="flex items-center space-x-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Sort:</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary underline cursor-pointer">Highest Capital Valuation</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-3.5 sm:gap-6 lg:gap-8 items-stretch">
+<!-- Featured Hero Villa (8 Cols) -->
+<article data-property-card="true" data-category="villas" data-city="delhi" data-price="65" data-title="The Lutyens Pavilions" data-search-terms="the lutyens pavilions vasant vihar lutyens zone new delhi ready to move clear title guarantee 65 cr 1200 sq yd 14200 sq ft 5 suites study spa colonnade private security quarters pool luxury independent villa freehold" class="lg:col-span-8 bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/40 flex flex-col justify-between group transition-all duration-300">
+<div class="relative overflow-hidden aspect-[16/10] h-40 sm:h-56 lg:h-auto min-h-0 bg-surface-dim">
+<img alt="The Lutyens Pavilions estate in New Delhi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="/images/lutyens_pavilions.jpg" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuCzbc6lCbTeICOKY0pL5gzdV9Zd9vC9OcuBrZT2jUvjaFuaWXKtQYRY1U857SJb81blMrpxcclBdluWCQv0HegHhOp7xdSMuFd4sVkSe3zyQf2OXoDrpIWHxXW8hDXwTCB8rdP-3OU8vlgF_yDwn1wSvum52A7uyWgfH5EMZIWDjBqHGVNn0juqnziPbH5pJYc7I_PqIuA4k_0DRZKlolxn8bE4pDSwQtpqm67jG-dDyPmfcqBjl2bN'">
+<div class="absolute top-4 left-4 flex flex-wrap gap-2">
+<span class="px-2 py-0.5 sm:px-3 sm:py-1 bg-surface-bright/90 backdrop-blur-md text-[9px] sm:text-label-caps uppercase tracking-wider text-primary font-bold rounded">Ready to Move</span>
+<span class="px-2 py-0.5 sm:px-3 sm:py-1 bg-inverse-surface/85 backdrop-blur-md text-[9px] sm:text-label-caps uppercase tracking-wider text-surface-bright rounded">Clear Title Guarantee</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 px-2.5 py-1 sm:px-4 sm:py-2 bg-surface-bright/95 backdrop-blur-md rounded-md sm:rounded shadow-md sm:shadow-lg">
+<span class="text-[8px] sm:text-label-caps text-on-surface-variant uppercase tracking-wider block">Investment Value</span>
+<span class="text-sm sm:text-lg md:text-headline-sm text-primary font-bold">₹65.00 Cr</span>
+</div>
+</div>
+<div class="p-3.5 sm:p-6 lg:p-8 flex-1 flex flex-col justify-between space-y-2.5 sm:space-y-4 lg:space-y-6">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant text-[9px] sm:text-label-caps uppercase tracking-wider mb-1 sm:mb-2">
+<span class="">Vasant Vihar &amp; Lutyens Zone Enclave, New Delhi</span>
+<span class="">RERA No: DLRERA2023P0089</span>
+</div>
+<h3 class="font-title-editorial text-base sm:text-xl lg:text-headline-sm text-on-surface group-hover:text-primary transition-colors">The Lutyens Pavilions</h3>
+<p class="text-[11.5px] sm:text-body-md text-on-surface-variant mt-1 sm:mt-2 leading-snug sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
+                An aristocratic neo-classical residential estate spanning 1,200 sq. yards of freehold land. Features a temperature-regulated subterranean spa, 4-car porte-cochère, Italian statuario marble flooring throughout, and integrated private security quarters.
+              </p>
+</div>
+<!-- Architectural Specs Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 py-2 sm:py-3 lg:py-4 border-y border-outline-variant/30 text-on-surface text-xs sm:text-body-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Plot Size</span>
+<span class="font-body-md text-body-md font-semibold">1,200 Sq. Yd.</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Super Built-up</span>
+<span class="font-body-md text-body-md font-semibold">14,200 Sq. Ft.</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Bedrooms</span>
+<span class="font-body-md text-body-md font-semibold">5 Suites + Study</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Vehicular Bays</span>
+<span class="font-body-md text-body-md font-semibold">6 Covered Stilt</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-2 sm:gap-4 pt-1 sm:pt-2">
+<a class="px-3 sm:px-6 py-2 sm:py-3 bg-primary hover:bg-primary-container text-on-primary text-[10.5px] sm:text-label-md uppercase tracking-wider sm:tracking-widest rounded transition-all" href="contact.html">Schedule Private Tour</a>
+<button class="px-3 sm:px-6 py-2 sm:py-3 border border-outline hover:border-primary text-on-surface text-[10.5px] sm:text-label-md uppercase tracking-wider sm:tracking-widest rounded transition-all flex items-center gap-1.5 sm:gap-2">
+<span class="material-symbols-outlined text-base text-primary">download</span> Brochure &amp; Floor Plans
+              </button>
+</div>
+</div>
+</article>
+<!-- Secondary Villa (4 Cols) -->
+<article data-property-card="true" data-category="villas" data-city="hyderabad" data-price="38.5" data-title="The Nilgiri Horizon Villa" data-search-terms="the nilgiri horizon villa road no 36 jubilee hills hyderabad prime 38.5 cr 38.50 850 sq yd 9800 sq ft freehold cleared infinity pool deck lutron sound insulation contemporary cantilevered luxury independent villa" class="lg:col-span-4 bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/40 flex flex-col justify-between group transition-all duration-300">
+<div class="relative overflow-hidden aspect-[16/10] sm:aspect-[4/3] h-40 sm:h-56 lg:h-auto min-h-0 bg-surface-dim">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Modern ultra-luxury hillside villa in Jubilee Hills Hyderabad at twilight with infinity pool reflecting warm amber lights and manicured tropical landscaping" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUM0pygx3uydz6ilBuxyPixm0JxayhUkIKl5T-qbSp8KmaOGB4IJsCnKDxGo5KfJgqdrOHlG0Gs7ag3mCP60ocEK18OtFAcrXIvXV5SnfRTtHg3LWkYBOos4FamOOt2l8H6YuEas4_K1yLKyFTzmHXhahtsvkc2jBYLoDtmDDmDmvNDmVXr6gpKKloKuh_xXwgM-6ivaeu7LGHW50pjp-93KdTRPGjypszrcSwfyuWtgIl8KVu96LL">
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 bg-surface-bright/90 backdrop-blur-md font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold rounded">Hyderabad Prime</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 sm:bottom-3 sm:right-3 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-surface-bright/95 backdrop-blur-md rounded shadow">
+<span class="text-sm sm:text-headline-sm text-primary font-bold">₹38.50 Cr</span>
+</div>
+</div>
+<div class="p-3.5 sm:p-5 lg:p-6 flex-1 flex flex-col justify-between space-y-2 sm:space-y-3 lg:space-y-4">
+<div>
+<span class="text-[9px] sm:text-label-caps uppercase tracking-wider text-on-surface-variant block mb-0.5 sm:mb-1">Road No. 36, Jubilee Hills</span>
+<h3 class="font-title-editorial text-base sm:text-title-editorial text-on-surface group-hover:text-primary transition-colors">The Nilgiri Horizon Villa</h3>
+<p class="text-[11.5px] sm:text-body-sm text-on-surface-variant mt-1 sm:mt-2 leading-snug sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
+                Sculptural cantilevered contemporary villa set on a vantage ridge overlooking Durgam Cheruvu lake. Infinity pool deck, home automation by Lutron, and triple-glazed sound insulation.
+              </p>
+</div>
+<div class="space-y-1 sm:space-y-2 py-1.5 sm:py-3 border-t border-outline-variant/30 text-on-surface text-[11px] sm:text-body-sm">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Plot Footprint:</span>
+<span class="font-medium">850 Sq. Yd.</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Carpet Area:</span>
+<span class="font-medium">9,800 Sq. Ft.</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Title Clearance:</span>
+<span class="font-medium text-emerald-800">100% Freehold Cleared</span>
+</div>
+</div>
+<div class="pt-2">
+<a class="w-full block py-1.5 sm:py-2.5 text-center border border-outline hover:border-primary text-on-surface text-[10.5px] sm:text-label-md uppercase tracking-wider rounded transition-all" href="contact.html">
+                Request Private Dossier
+              </a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Section 2: Royal Heritage Mansions -->
+<section class="space-y-3 sm:space-y-6 lg:space-y-8 transition-all duration-300" id="mansions" data-category-section="mansions">
+<div class="hidden md:flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-outline-variant/30">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-tertiary font-bold">Category 02</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">Imperial Mansions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">Museum-grade stone masonry, expansive banquet corridors, and ceremonial driveway porte-cochères.</p>
+</div>
+<div class="flex items-center space-x-2">
+<span class="px-3 py-1 bg-tertiary-container/30 text-on-tertiary-container font-label-caps text-label-caps uppercase tracking-wider rounded font-semibold">Strict Discretion Guaranteed</span>
+</div>
+</div>
+<!-- Feature Highlight Card (Full Grid Hero) -->
+<article data-property-card="true" data-category="mansions" data-city="delhi" data-price="85" data-title="Sovereign Heritage Manor" data-search-terms="sovereign heritage manor golf links enclave new delhi off-market mandate diplomatic clearance trophy asset 85 cr 85.00 unencumbered freehold title 1850 sq yards 6 imperial suites 4 staff annexes sandstone colonnades banquet royal imperial mansions" class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/40 grid grid-cols-1 lg:grid-cols-12 group transition-all duration-300">
+<div class="lg:col-span-7 relative h-40 sm:h-56 lg:h-auto min-h-0 lg:min-h-[400px] bg-surface-dim overflow-hidden">
+<img alt="Sovereign Heritage Manor in New Delhi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC-_e7fXbDfkauEH8_3fyCnhbkxK8Nm7XtLpTvSONpzS0XSdl9fXPDcTa2snloKpx4E1CbVR5NIOyynlRFENDebx1NJWf9Q1AJHu8PHGnIMuVOGtYGZ5ZgGio8sijAqjmvwVk16Pa_p2DgOBTu93wSmplMA24rwIyaBvrFU6rCbpKPzcfUqnL5CjAJSrnca840QLnCrrZP6NZY7WIcPnsqabNJViR9l7oKBJRa5LxO6hCs3P5rlrma">
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2 py-0.5 sm:px-3 sm:py-1 bg-surface-bright/95 backdrop-blur-md text-[9px] sm:text-label-caps uppercase tracking-wider text-primary font-bold rounded">Off-Market Mandate</span>
+<span class="px-2 py-0.5 sm:px-3 sm:py-1 bg-inverse-surface/85 backdrop-blur-md text-[9px] sm:text-label-caps uppercase tracking-wider text-surface-bright rounded">Diplomatic Clearance</span>
+</div>
+</div>
+<div class="lg:col-span-5 p-3.5 sm:p-6 lg:p-10 flex flex-col justify-between space-y-2.5 sm:space-y-4 lg:space-y-6">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant text-[9px] sm:text-label-caps uppercase tracking-wider mb-1 sm:mb-2">
+<span class="">Golf Links Enclave, New Delhi</span>
+<span class="text-primary font-bold">Trophy Asset</span>
+</div>
+<h3 class="font-headline-md text-base sm:text-xl lg:text-headline-md text-on-surface group-hover:text-primary transition-colors">Sovereign Heritage Manor</h3>
+<p class="text-[11.5px] sm:text-body-md text-on-surface-variant mt-1.5 sm:mt-3 leading-snug sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
+              An irreplaceable neoclassical imperial manor bordered by lush century-old foliage. Features grand sandstone colonnades, royal ceremonial banquet suites, private boardrooms, and diplomatic security detachments.
+            </p>
+</div>
+<div class="space-y-1.5 sm:space-y-3 py-2 sm:py-4 border-y border-outline-variant/30 text-on-surface text-[11px] sm:text-body-sm">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Conveyance Status</span>
+<span class="font-semibold text-primary">Unencumbered Freehold Title</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Compound Footprint</span>
+<span class="font-semibold">1,850 Sq. Yards</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Private Accommodations</span>
+<span class="font-semibold">6 Imperial Suites + 4 Staff Annexes</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Valuation Benchmark</span>
+<span class="text-sm sm:text-lg lg:text-headline-sm text-primary font-bold">₹85.00 Cr</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-2 sm:gap-3 pt-1 sm:pt-2">
+<a class="flex-1 py-2 sm:py-3 px-3 sm:px-4 bg-primary hover:bg-primary-container text-on-primary text-[10.5px] sm:text-label-md uppercase tracking-wider rounded text-center transition-all" href="contact.html">
+              Request Confidential Dossier
+            </a>
+<a class="py-2 sm:py-3 px-3 sm:px-4 border border-outline hover:border-primary text-on-surface text-[10.5px] sm:text-label-md uppercase tracking-wider rounded text-center transition-all flex items-center justify-center gap-1 sm:gap-1.5" href="https://wa.me/912269885000" target="_blank">
+<span class="material-symbols-outlined text-sm sm:text-base text-emerald-600">forum</span> Consult Advisory Desk
+            </a>
+</div>
+</div>
+</article>
+</section>
+<!-- Section 3: High-Rise Architectural Towers -->
+<section class="space-y-3 sm:space-y-6 lg:space-y-8 transition-all duration-300" id="highrise" data-category-section="highrise">
+<div class="hidden md:flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-outline-variant/30">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-tertiary font-bold">Category 03</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">High-Rise Towers</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">Engineered to earthquake Zone V specifications with Mivan monolithic structural cores and panoramic horizon balconies.</p>
+</div>
+<div class="flex items-center space-x-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Showing:</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">All Construction Stages</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-3.5 sm:gap-6 lg:gap-8 items-stretch">
+<!-- Tower 1: The Aetheria (7 Cols) -->
+<article data-property-card="true" data-category="highrise" data-city="delhi" data-price="18.5" data-title="The Aetheria High-Rise Tower" data-search-terms="the aetheria high-rise tower golf course road gurugram ncr hrera verified construction 90% completed 18.5 cr 18.50 onwards 4 5 bhk aravalli private elevator triple-height lobby vrv hepa lap pool 11.8 feet ceiling 65000 sq ft clubhouse high rise towers highrise" class="lg:col-span-7 bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/40 flex flex-col justify-between group transition-all duration-300">
+<div class="relative overflow-hidden aspect-[16/10] sm:aspect-[16/11] h-40 sm:h-56 lg:h-auto min-h-0 bg-surface-dim">
+<img alt="The Aetheria High-Rise Tower on Golf Course Road Gurugram" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4SN32S_IkF4AUiHJzVRheNDNYMQ1aS_sg4wgYgShKQdRVYVNuGqS6kEDf62T7yZ_Km4U_zlgMOQ7c2s1IdVqj7JlM_eMJ7UjyCRHvw0jlV2lUYu4yzn-EiagDTiVNE_oYjQFmOczUDX5sCEpjFWGqFYQsLu_ghywWcubBTXYC-nbXhxIowPzNfhdit4eBtTuDXsmWrMjq1YYxqjt30GR9XfT4aYRzRj55rSqp_3NK1eJtWPCKDLKN">
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2 py-0.5 sm:px-3 sm:py-1 bg-surface-bright/95 backdrop-blur-md text-[9px] sm:text-label-caps uppercase tracking-wider text-primary font-bold rounded">Construction 90% Completed</span>
+<span class="px-2 py-0.5 sm:px-3 sm:py-1 bg-inverse-surface/85 backdrop-blur-md text-[9px] sm:text-label-caps uppercase tracking-wider text-surface-bright rounded">HRERA Verified</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 px-2.5 py-1 sm:px-4 sm:py-2 bg-surface-bright/95 backdrop-blur-md rounded-md sm:rounded shadow-md sm:shadow-lg">
+<span class="text-[8px] sm:text-label-caps text-on-surface-variant uppercase tracking-wider block">Configurations From</span>
+<span class="text-sm sm:text-lg md:text-headline-sm text-primary font-bold">₹18.50 Cr Onwards</span>
+</div>
+</div>
+<div class="p-3.5 sm:p-6 lg:p-8 flex-1 flex flex-col justify-between space-y-2.5 sm:space-y-4 lg:space-y-6">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant text-[9px] sm:text-label-caps uppercase tracking-wider mb-1">
+<span class="">Golf Course Road, Gurugram NCR</span>
+<span class="">Tower A &amp; B</span>
+</div>
+<h3 class="font-title-editorial text-base sm:text-xl lg:text-headline-sm text-on-surface group-hover:text-primary transition-colors">The Aetheria High-Rise Tower</h3>
+<p class="text-[11.5px] sm:text-body-md text-on-surface-variant mt-1 sm:mt-2 leading-snug sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
+                4 &amp; 5 BHK ultra-residences rising 48 storeys above the Aravalli biodiversity range. Featuring private elevator vestibules, triple-height designer lobbies, VRV air conditioning with HEPA air filters, and a temperature-controlled lap pool.
+              </p>
+</div>
+<!-- Architectural highlights inline -->
+<div class="grid grid-cols-3 gap-1.5 sm:gap-3 py-2 sm:py-3 border-y border-outline-variant/30 text-center text-xs sm:text-body-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Ceiling Height</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">11.8 Feet Clear</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Clubhouse</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">65,000 Sq. Ft.</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Possession</span>
+<span class="font-body-md text-body-md font-semibold text-primary">Q4 2025</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-2 sm:gap-3 pt-1 sm:pt-2">
+<a class="flex-1 py-2 sm:py-3 px-3 sm:px-4 bg-primary hover:bg-primary-container text-on-primary text-[10.5px] sm:text-label-md uppercase tracking-wider rounded text-center transition-all" href="contact.html">Book Sample Flat Tour</a>
+<button class="py-2 sm:py-3 px-3 sm:px-4 border border-outline hover:border-primary text-on-surface text-[10.5px] sm:text-label-md uppercase tracking-wider rounded transition-all">View Floor Plans</button>
+</div>
+</div>
+</article>
+<!-- Tower 2: The Palladium (5 Cols) -->
+<article data-property-card="true" data-category="highrise" data-city="bengaluru" data-price="12.75" data-title="The Palladium Sky Residences" data-search-terms="the palladium sky residences whitefield prime bengaluru tech corridor 12.75 cr 4-bhk simplex 270-degree wraparound balconies helipad 4650 sq ft rera dual-grid dg backup high rise towers highrise" class="lg:col-span-5 bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/40 flex flex-col justify-between group transition-all duration-300">
+<div class="relative overflow-hidden aspect-[16/10] sm:aspect-[16/11] h-40 sm:h-56 lg:h-auto min-h-0 bg-surface-dim">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Modern gleaming architectural glass high-rise tower in Whitefield Bengaluru with landscaped podium and sky bridge lounge during twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuMvSvIe7Vqz9y0ysELh8SiZgBhTXthCF2_QhgCLuRwfpzSTABTbRQF0BUPKjzh7nMk-mg7ekx3j-DuaUx-B0ChPdd1LWADlT8-D4Vn_qoIWlBCo2y23GP8CEZCi0CGZet9tCbn0bnpYqr6zP32LKp24juwGXRmQC_Kj0_7mNgqpwzn_7wwGGybBlRF321tsYDmBNMVGSJUQEYfRBWliLejwu3wQdMvKn343PTdZuQXOJuPEh8_1-h">
+<div class="absolute top-4 left-4">
+<span class="px-2 py-0.5 sm:px-3 sm:py-1 bg-surface-bright/95 backdrop-blur-md text-[9px] sm:text-label-caps uppercase tracking-wider text-primary font-bold rounded">Bengaluru Tech Corridor</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-surface-bright/95 backdrop-blur-md rounded shadow">
+<span class="text-sm sm:text-headline-sm text-primary font-bold">₹12.75 Cr</span>
+</div>
+</div>
+<div class="p-3.5 sm:p-6 lg:p-8 flex-1 flex flex-col justify-between space-y-2 sm:space-y-3 lg:space-y-4">
+<div>
+<span class="text-[9px] sm:text-label-caps uppercase tracking-wider text-on-surface-variant block mb-0.5 sm:mb-1">Whitefield Prime, Bengaluru</span>
+<h3 class="font-title-editorial text-base sm:text-title-editorial text-on-surface group-hover:text-primary transition-colors">The Palladium Sky Residences</h3>
+<p class="text-[11.5px] sm:text-body-sm text-on-surface-variant mt-1 sm:mt-2 leading-snug sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
+                4-BHK simplex residences with 270-degree wraparound balconies. Direct access to international schools, aerotropolis transit, and private helipad booking privileges.
+              </p>
+</div>
+<div class="space-y-2 py-3 border-y border-outline-variant/30 text-on-surface font-body-sm text-body-sm">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Carpet Area:</span>
+<span class="font-medium">4,650 Sq. Ft.</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">RERA Status:</span>
+<span class="font-medium text-emerald-800">PRM/KA/RERA/1251/446</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Power Redundancy:</span>
+<span class="font-medium">100% Dual-Grid DG Backup</span>
+</div>
+</div>
+<div class="pt-2">
+<a class="w-full block py-2 sm:py-3 text-center border border-outline hover:border-primary text-on-surface text-[10.5px] sm:text-label-md uppercase tracking-wider rounded transition-all" href="contact.html">
+                Download Technical Brochure
+              </a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Section 4: Sky Penthouses -->
+<section class="space-y-3 sm:space-y-6 lg:space-y-8 transition-all duration-300" id="penthouses" data-category-section="penthouses">
+<div class="hidden md:flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-outline-variant/30">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-tertiary font-bold">Category 04</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">Penthouses</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">Duplex and triplex sky-estates perched high above sea lines and metropolitan horizons.</p>
+</div>
+<div class="flex items-center space-x-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold">Limited to 6 Global Allocations</span>
+</div>
+</div>
+<!-- Hero Trophy Penthouse Card -->
+<article data-property-card="true" data-category="penthouses" data-city="mumbai" data-price="72" data-title="The Imperial Penthouse at Sea Face" data-search-terms="the imperial penthouse at sea face worli south mumbai maharera registered triplex levels 52 53 54 72 cr 72.00 arabian sea bandra-worli sea link 50-ft private infinity sky pool 28-ft double-height living salon biometric elevator 8 bays penthouses sky penthouses" class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/40 flex flex-col group transition-all duration-300">
+<div class="relative overflow-hidden aspect-[16/10] sm:aspect-[21/9] h-40 sm:h-56 lg:h-auto min-h-0 lg:min-h-[380px] bg-surface-dim">
+<img alt="The Imperial Penthouse at Sea Face in Worli South Mumbai" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLKQUiY8sIatwlnzO2D-sHd53zumMowWwIP_Q5ofuA_hXX7AiEkIPuw4j54MJYons5vbFZ8jaad-z79xEnyyta_h3L8UVYBFI5Ya0fDGwXHhc0Ov69j05L0UBuGZDPJhieo9KndiPSycxegA43Xv3kL0w4yS4k38OnlIXmu86g8xQeGPBnNKmIDPzCN-Y9F6kyBh375JMxm2tIbr4ZGiHpVsCjD7KigiBYoeTKfMtnovJSZPs85-A9">
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2 py-0.5 sm:px-3.5 sm:py-1.5 bg-surface-bright/95 backdrop-blur-md text-[9px] sm:text-label-caps uppercase tracking-wider text-primary font-bold rounded">Trophy Penthouse</span>
+<span class="px-2 py-0.5 sm:px-3.5 sm:py-1.5 bg-inverse-surface/85 backdrop-blur-md text-[9px] sm:text-label-caps uppercase tracking-wider text-surface-bright rounded">MahaRERA Registered</span>
+</div>
+<div class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 px-2.5 py-1 sm:px-5 sm:py-2.5 bg-surface-bright/95 backdrop-blur-md rounded-md sm:rounded shadow-md sm:shadow-xl">
+<span class="text-[8px] sm:text-label-caps text-on-surface-variant uppercase tracking-wider block">Offered At</span>
+<span class="text-sm sm:text-lg md:text-headline-md text-primary font-bold">₹72.00 Cr</span>
+</div>
+</div>
+<div class="p-3.5 sm:p-6 lg:p-10 flex flex-col lg:flex-row lg:items-center justify-between gap-3 sm:gap-6 lg:gap-8">
+<div class="max-w-3xl space-y-3">
+<div class="flex items-center space-x-2 text-on-surface-variant text-[9px] sm:text-label-caps uppercase tracking-wider">
+<span class="">Worli Sea Face, South Mumbai</span>
+<span class="">•</span>
+<span class="">Levels 52, 53 &amp; 54 (Triplex)</span>
+</div>
+<h3 class="font-headline-md text-base sm:text-xl lg:text-headline-md text-on-surface group-hover:text-primary transition-colors">The Imperial Penthouse at Sea Face</h3>
+<p class="text-[11.5px] sm:text-body-md text-on-surface-variant leading-snug sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
+              Unrivalled 360-degree vista of the Arabian Sea and the Bandra-Worli Sea Link. Features a 50-ft cantilevered private infinity sky pool, 28-ft double-height living salon, private biometric elevator opening directly into the formal foyer, and dedicated basement car galleries for 8 exotics.
+            </p>
+<div class="flex flex-wrap gap-2 sm:gap-4 pt-1 sm:pt-2 text-[10.5px] sm:text-body-sm text-on-surface">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-primary">pool</span> Private Infinity Sky Pool</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-primary">elevator</span> Private Biometric Elevator</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-primary">directions_car</span> 8 Reserved Basement Bays</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-primary">verified</span> Freehold MahaRERA Certified</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-3 min-w-0 lg:min-w-[240px]">
+<a class="py-2 sm:py-3 px-3 sm:px-6 bg-primary hover:bg-primary-container text-on-primary text-[10.5px] sm:text-label-md uppercase tracking-wider sm:tracking-widest rounded text-center transition-all shadow-md" href="contact.html">
+              Direct Builder Desk
+            </a>
+<a class="py-2 sm:py-3 px-3 sm:px-6 border border-outline hover:border-primary text-on-surface text-[10.5px] sm:text-label-md uppercase tracking-wider sm:tracking-widest rounded text-center transition-all flex items-center justify-center gap-1.5 sm:gap-2" href="https://wa.me/912269885000" target="_blank">
+<span class="material-symbols-outlined text-sm sm:text-base text-emerald-600">videocam</span> Watch 4K Video Tour
+            </a>
+</div>
+</div>
+</article>
+</section>
+<!-- Advisory & Confidential Mandate Banner -->
+
+</div>
+<!-- Interactive JavaScript for Filter Modal Toggle -->
+<script>
+    (function() {
+      const openBtn = document.getElementById('open-filters-btn');
+      const closeBtn = document.getElementById('close-drawer');
+      const overlay = document.getElementById('filter-drawer-overlay');
+      const drawer = document.getElementById('filter-drawer');
+      const applyBtn = document.getElementById('apply-filters');
+      const resetBtn = document.getElementById('reset-filters');
+
+      function openFilters() {
+        if (!overlay || !drawer) return;
+        overlay.classList.remove('opacity-0', 'pointer-events-none');
+        overlay.classList.add('opacity-100', 'pointer-events-auto');
+        drawer.classList.remove('translate-x-full');
+        drawer.classList.add('translate-x-0');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeFilters() {
+        if (!overlay || !drawer) return;
+        overlay.classList.remove('opacity-100', 'pointer-events-auto');
+        overlay.classList.add('opacity-0', 'pointer-events-none');
+        drawer.classList.remove('translate-x-0');
+        drawer.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openFilters);
+      if (closeBtn) closeBtn.addEventListener('click', closeFilters);
+      if (applyBtn) applyBtn.addEventListener('click', closeFilters);
+      if (overlay) {
+        overlay.addEventListener('click', function(e) {
+          if (e.target === overlay) {
+            closeFilters();
+          }
+        });
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', function() {
+          const checkboxes = drawer.querySelectorAll('input[type="checkbox"]');
+          checkboxes.forEach(cb => cb.checked = false);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="bg-[#FAF7F2] border-t border-[#E5DACD] pt-16 pb-12 text-brand-charcoal"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#E5DACD]"><div class="lg:col-span-2 pr-4"><div class="flex items-center space-x-3 mb-4"><div class="w-7 h-7 bg-brand-charcoal text-brand-gold flex items-center justify-center font-serif text-sm font-bold border border-brand-gold/40">W</div><span class="font-serif tracking-[0.2em] text-sm uppercase font-semibold text-brand-charcoal">Webravex Builders</span></div><p class="text-xs text-[#73685C] leading-relaxed max-w-sm mb-4">Pioneers of ultra-luxury residences, commercial IT parks, and civil engineering infrastructure across India's leading economic epicenters.</p><div class="text-[11px] text-[#8F7E6B] space-y-1 mb-4"><span class="font-bold text-brand-charcoal uppercase tracking-wider block">Corporate Headquarters:</span><p class="text-xs text-[#63574A]">Webravex Tower, Level 18, Senapati Bapat Marg</p><div class="">New Delhi,&nbsp;<span style="font-size: 0.75rem;" class="">India</span></div></div><div class="text-[11px] text-[#8F7E6B]"><span class="font-bold text-brand-charcoal uppercase tracking-wider block mb-0.5">Direct Builder Desk:</span><a class="hover:text-brand-charcoal underline" href="mailto:concierge@webravex.in">concierge@webravex.in</a> • <span class="font-medium">+91 22 6988 5000</span></div></div><div><h4 class="text-xs uppercase font-bold tracking-widest text-[#8F7E6B] mb-4">Developments</h4><ul class="space-y-2.5 text-xs text-[#63574A]"><li class=""><a class="hover:text-brand-charcoal transition-colors" href="#">Ready to Move Residences</a></li><li class=""><a class="hover:text-brand-charcoal transition-colors" href="#">Ongoing High-Rise Towers</a></li><li class=""><a class="hover:text-brand-charcoal transition-colors" href="#">Bespoke Villa Estates</a></li><li class=""><a class="hover:text-brand-charcoal transition-colors" href="#">Grade-A Commercial Parks</a></li><li class=""><a class="hover:text-brand-charcoal transition-colors" href="#">Penthouse Sky Mansions</a></li></ul></div><div><h4 class="text-xs uppercase font-bold tracking-widest text-[#8F7E6B] mb-4">Governance &amp; Trust</h4><ul class="space-y-2.5 text-xs text-[#63574A] mb-6"><li class=""><a class="hover:text-brand-charcoal transition-colors" href="#">RERA Disclosures &amp; Approvals</a></li><li class=""><a class="hover:text-brand-charcoal transition-colors" href="#">Construction Updates &amp; Audits</a></li><li class=""><a class="hover:text-brand-charcoal transition-colors" href="#">NRI Investment &amp; Repatriation Cell</a></li><li class=""><a class="hover:text-brand-charcoal transition-colors" href="#">Buyer Grievance Redressal</a></li><li class=""><a class="hover:text-brand-charcoal transition-colors" href="#">CREDAI Code of Conduct</a></li></ul></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-[#8A7B6B]"><div class="mb-4 md:mb-0">© 2025 Webravex Builders &amp; Developers Ltd. CIN: L45200MH1993PLC071420.<div class="">&nbsp; &nbsp; All developments registered under respective State RERA authorities.</div></div><div class="flex items-center space-x-6"><a class="hover:text-brand-charcoal" href="#">RERA Disclosures</a><a class="hover:text-brand-charcoal" href="#">NRI Desk</a><a class="hover:text-brand-charcoal" href="#">Terms &amp; Conditions</a></div></div></div></footer>
+
+
+<script>
+  (function() {
+    const searchInput = document.getElementById('propertiesSearchInput');
+    const clearSearchBtn = document.getElementById('clearSearchInputBtn');
+    const citySelect = document.getElementById('propertiesCitySelect');
+    const typologySelect = document.getElementById('propertiesTypologySelect');
+    const priceSelect = document.getElementById('propertiesPriceSelect');
+    const searchBtn = document.getElementById('searchPropertiesBtn');
+    const categoryPills = document.querySelectorAll('.category-pill');
+    const resultsCountText = document.getElementById('resultsCountText');
+    const activeFilterChips = document.getElementById('activeFilterChips');
+    const noPropertiesFound = document.getElementById('noPropertiesFound');
+    const emptyStateResetBtn = document.getElementById('emptyStateResetBtn');
+    const activeFilterBadge = document.getElementById('activeFilterBadge');
+    
+    const propertyCards = document.querySelectorAll('[data-property-card]');
+    const categorySections = document.querySelectorAll('[data-category-section]');
+
+    let currentCategory = 'all';
+
+    function performSearch() {
+      const query = (searchInput ? searchInput.value : '').trim().toLowerCase();
+      const city = citySelect ? citySelect.value : 'all';
+      const priceRange = priceSelect ? priceSelect.value : 'all';
+      const typology = currentCategory !== 'all' ? currentCategory : (typologySelect ? typologySelect.value : 'all');
+
+      // Toggle clear search button visibility
+      if (clearSearchBtn) {
+        if (query.length > 0) {
+          clearSearchBtn.classList.remove('hidden');
+        } else {
+          clearSearchBtn.classList.add('hidden');
+        }
+      }
+
+      let totalMatches = 0;
+      const categoryMatchCounts = {
+        villas: 0,
+        mansions: 0,
+        highrise: 0,
+        penthouses: 0
+      };
+
+      propertyCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category') || '';
+        const cardCity = card.getAttribute('data-city') || '';
+        const cardPrice = parseFloat(card.getAttribute('data-price') || '0');
+        const cardSearchTerms = (card.getAttribute('data-search-terms') || '').toLowerCase();
+        const cardText = card.textContent.toLowerCase();
+
+        // 1. Text Search Query Matching
+        let matchesQuery = true;
+        if (query) {
+          const queryTerms = query.split(/\s+/).filter(Boolean);
+          matchesQuery = queryTerms.every(term => cardSearchTerms.includes(term) || cardText.includes(term));
+        }
+
+        // 2. City Filter Matching
+        let matchesCity = true;
+        if (city !== 'all') {
+          matchesCity = (cardCity === city);
+        }
+
+        // 3. Typology / Category Filter Matching
+        let matchesTypology = true;
+        if (typology !== 'all') {
+          matchesTypology = (cardCategory === typology);
+        }
+
+        // 4. Price Bracket Matching
+        let matchesPrice = true;
+        if (priceRange === '10-25') {
+          matchesPrice = (cardPrice >= 10 && cardPrice <= 25);
+        } else if (priceRange === '25-50') {
+          matchesPrice = (cardPrice > 25 && cardPrice <= 50);
+        } else if (priceRange === '50-100') {
+          matchesPrice = (cardPrice > 50 && cardPrice <= 100);
+        } else if (priceRange === '100+') {
+          matchesPrice = (cardPrice > 100);
+        }
+
+        const isMatch = matchesQuery && matchesCity && matchesTypology && matchesPrice;
+
+        if (isMatch) {
+          card.classList.remove('hidden');
+          totalMatches++;
+          if (categoryMatchCounts[cardCategory] !== undefined) {
+            categoryMatchCounts[cardCategory]++;
+          }
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Show/Hide category sections based on whether they contain visible cards
+      categorySections.forEach(section => {
+        const visibleCards = section.querySelectorAll('[data-property-card]:not(.hidden)');
+        if (visibleCards.length > 0) {
+          section.classList.remove('hidden');
+        } else {
+          section.classList.add('hidden');
+        }
+      });
+
+      // Toggle Empty State
+      if (noPropertiesFound) {
+        if (totalMatches === 0) {
+          noPropertiesFound.classList.remove('hidden');
+        } else {
+          noPropertiesFound.classList.add('hidden');
+        }
+      }
+
+      // Update Category Badges
+      categoryPills.forEach(pill => {
+        const cat = pill.getAttribute('data-category');
+        const badge = pill.querySelector('.category-badge');
+        if (badge) {
+          if (cat === 'all') {
+            badge.textContent = totalMatches;
+          } else if (categoryMatchCounts[cat] !== undefined) {
+            badge.textContent = categoryMatchCounts[cat];
+          }
+        }
+      });
+
+      // Update active filter badge counter in Drawer button
+      let activeFilterCount = 0;
+      if (query) activeFilterCount++;
+      if (city !== 'all') activeFilterCount++;
+      if (typology !== 'all') activeFilterCount++;
+      if (priceRange !== 'all') activeFilterCount++;
+      if (activeFilterBadge) {
+        if (activeFilterCount > 0) {
+          activeFilterBadge.textContent = activeFilterCount;
+          activeFilterBadge.classList.remove('hidden');
+        } else {
+          activeFilterBadge.classList.add('hidden');
+        }
+      }
+
+      // Update Filter Status Summary Bar
+      updateFilterStatus(totalMatches, query, city, typology, priceRange);
+    }
+
+    function updateFilterStatus(count, query, city, typology, price) {
+      if (!resultsCountText) return;
+
+      const hasActiveFilters = Boolean(query || city !== 'all' || typology !== 'all' || price !== 'all');
+
+      if (count === 0) {
+        resultsCountText.textContent = 'No estates match the selected parameters';
+      } else if (!hasActiveFilters) {
+        resultsCountText.textContent = 'Showing all ' + count + ' verified luxury estates';
+      } else {
+        resultsCountText.textContent = 'Found ' + count + ' estate' + (count === 1 ? '' : 's') + ' matching criteria';
+      }
+
+      // Render dismissible filter chips
+      if (activeFilterChips) {
+        activeFilterChips.innerHTML = '';
+
+        if (query) {
+          const chip = document.createElement('span');
+          chip.className = 'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container border border-outline-variant/40 text-[11px] font-medium text-on-surface shadow-sm';
+          chip.innerHTML = '<span>"' + query + '"</span><button type="button" aria-label="Remove search filter" class="text-on-surface-variant hover:text-primary font-bold">&times;</button>';
+          chip.querySelector('button').addEventListener('click', () => {
+            if (searchInput) searchInput.value = '';
+            performSearch();
+          });
+          activeFilterChips.appendChild(chip);
+        }
+
+        if (city !== 'all') {
+          const cityName = citySelect ? citySelect.options[citySelect.selectedIndex].text : city;
+          const chip = document.createElement('span');
+          chip.className = 'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container border border-outline-variant/40 text-[11px] font-medium text-on-surface shadow-sm';
+          chip.innerHTML = '<span>' + cityName + '</span><button type="button" aria-label="Remove city filter" class="text-on-surface-variant hover:text-primary font-bold">&times;</button>';
+          chip.querySelector('button').addEventListener('click', () => {
+            if (citySelect) citySelect.value = 'all';
+            performSearch();
+          });
+          activeFilterChips.appendChild(chip);
+        }
+
+        if (typology !== 'all') {
+          const typeNames = {
+            villas: 'Independent Villas',
+            mansions: 'Imperial Mansions',
+            highrise: 'High-Rise Towers',
+            penthouses: 'Sky Penthouses'
+          };
+          const typeLabel = typeNames[typology] || typology;
+          const chip = document.createElement('span');
+          chip.className = 'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container border border-outline-variant/40 text-[11px] font-medium text-on-surface shadow-sm';
+          chip.innerHTML = '<span>' + typeLabel + '</span><button type="button" aria-label="Remove category filter" class="text-on-surface-variant hover:text-primary font-bold">&times;</button>';
+          chip.querySelector('button').addEventListener('click', () => {
+            setCategory('all');
+          });
+          activeFilterChips.appendChild(chip);
+        }
+
+        if (price !== 'all') {
+          const priceName = priceSelect ? priceSelect.options[priceSelect.selectedIndex].text : price;
+          const chip = document.createElement('span');
+          chip.className = 'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container border border-outline-variant/40 text-[11px] font-medium text-on-surface shadow-sm';
+          chip.innerHTML = '<span>' + priceName + '</span><button type="button" aria-label="Remove price filter" class="text-on-surface-variant hover:text-primary font-bold">&times;</button>';
+          chip.querySelector('button').addEventListener('click', () => {
+            if (priceSelect) priceSelect.value = 'all';
+            performSearch();
+          });
+          activeFilterChips.appendChild(chip);
+        }
+
+        if (hasActiveFilters) {
+          const resetBtn = document.createElement('button');
+          resetBtn.type = 'button';
+          resetBtn.className = 'text-primary hover:underline text-[11px] font-semibold uppercase tracking-wider ml-1 cursor-pointer';
+          resetBtn.textContent = 'Reset All';
+          resetBtn.addEventListener('click', resetAll);
+          activeFilterChips.appendChild(resetBtn);
+        }
+      }
+    }
+
+    function setCategory(cat, smoothScroll) {
+      currentCategory = cat;
+      if (typologySelect) {
+        typologySelect.value = cat;
+      }
+
+      categoryPills.forEach(pill => {
+        const pCat = pill.getAttribute('data-category');
+        const badge = pill.querySelector('.category-badge');
+        if (pCat === cat) {
+          pill.classList.add('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-md', 'shadow-primary/20', 'ring-2', 'ring-primary/20');
+          pill.classList.remove('bg-surface-bright/90', 'text-on-surface', 'border-outline-variant/40');
+          if (badge) {
+            badge.classList.add('bg-white/20', 'text-white');
+            badge.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          }
+          // Center the active pill smoothly on mobile
+          pill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        } else {
+          pill.classList.remove('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-md', 'shadow-primary/20', 'ring-2', 'ring-primary/20');
+          pill.classList.add('bg-surface-bright/90', 'text-on-surface', 'border-outline-variant/40');
+          if (badge) {
+            badge.classList.remove('bg-white/20', 'text-white');
+            badge.classList.add('bg-surface-container', 'text-on-surface-variant');
+          }
+        }
+      });
+
+      performSearch();
+
+      if (smoothScroll && cat !== 'all') {
+        const targetSec = document.getElementById(cat);
+        if (targetSec && !targetSec.classList.contains('hidden')) {
+          targetSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    }
+
+    function resetAll() {
+      if (searchInput) searchInput.value = '';
+      if (citySelect) citySelect.value = 'all';
+      if (typologySelect) typologySelect.value = 'all';
+      if (priceSelect) priceSelect.value = 'all';
+      setCategory('all');
+    }
+
+    // Event Listeners
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        performSearch();
+      });
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          performSearch();
+          const firstCard = document.querySelector('[data-property-card]:not(.hidden)');
+          if (firstCard) {
+            firstCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        }
+      });
+    }
+
+    if (clearSearchBtn) {
+      clearSearchBtn.addEventListener('click', () => {
+        if (searchInput) {
+          searchInput.value = '';
+          searchInput.focus();
+        }
+        performSearch();
+      });
+    }
+
+    if (citySelect) citySelect.addEventListener('change', performSearch);
+    if (priceSelect) priceSelect.addEventListener('change', performSearch);
+    if (typologySelect) {
+      typologySelect.addEventListener('change', () => {
+        setCategory(typologySelect.value);
+      });
+    }
+
+    if (searchBtn) {
+      searchBtn.addEventListener('click', () => {
+        performSearch();
+        const firstCard = document.querySelector('[data-property-card]:not(.hidden)');
+        if (firstCard) {
+          firstCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      });
+    }
+
+    categoryPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        const cat = pill.getAttribute('data-category');
+        setCategory(cat, true);
+      });
+    });
+
+    if (emptyStateResetBtn) emptyStateResetBtn.addEventListener('click', resetAll);
+
+    // Initial Search Pass to set badge counters
+    performSearch();
+  })();
+</script>
+
+</body></html>
